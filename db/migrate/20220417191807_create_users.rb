@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :email
       t.string :password
 
-      t.has_many :games
+      t.references :games
 
       t.timestamps
     end
